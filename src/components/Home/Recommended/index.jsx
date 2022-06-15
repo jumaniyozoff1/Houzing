@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import { Contaier, Wrapper,Icons } from './style'
+import { Contaier, Wrapper,Icons,Icon, IconLeft, IconRight } from './style'
 import Card from '../../Card'
 import AliceCarousel from 'react-alice-carousel';
 
@@ -26,15 +26,16 @@ const Reacommended= () => {
   ];
   return (
     <Contaier>
-      <span>
-        <Icons.Left  onClick={()=> slider.current.slidePrev()}/>
-      </span>
-      <span>
-        <Icons.Right onClick={()=> slider.current.slideNext()}/>
-      </span>
+      
         <h1 className='title'>Reacommended</h1>
-        <p className='description text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, pariatur?</p>
+        <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
         <Wrapper >
+          <IconLeft onClick={()=> slider.current.slidePrev()}>
+            <Icons.Left  />
+          </IconLeft>
+          <IconRight  onClick={()=> slider.current.slideNext()}>
+            <Icons.Right/>
+          </IconRight>
             <AliceCarousel  
               controlsStrategy='alternate'
               mouseTracking

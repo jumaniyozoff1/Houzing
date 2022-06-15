@@ -1,8 +1,10 @@
 import React,{useRef} from 'react'
-import { Contaier, Wrapper,Icons,Img } from './style'
-import Card from '../../Card'
+import { Contaier, Wrapper,Icons,Img,IconLeft,IconRight } from './style'
 import AliceCarousel from 'react-alice-carousel';
-import House from '../../../assets/img/house.png'
+// import House from '../../../assets/img/house.png'
+import Apartment from '../../../assets/img/apartment.png'
+import Office from '../../../assets/img/office.png'
+import Villa from '../../../assets/img/villa.png'
 
 
 
@@ -17,18 +19,22 @@ const Category= () => {
     }
   }
   const items = [
-    <Img   src={House}/>,
-    <Img   src={House}/>,
-    <Img   src={House}/>,
-    <Img   src={House}/>,
+    <Img  src={Villa}></Img>,
+    <Img  src={Apartment}></Img>,
+    <Img  src={Office}></Img>,
+    <Img  src={Villa}></Img>,
   ];
   return (
     <Contaier>
         <h1 className='title'>Category</h1>
-        <p className='description text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, pariatur?</p>
-          <Icons.Left  onClick={()=> slider.current.slidePrev()}/>
-          <Icons.Right onClick={()=> slider.current.slideNext()}/>
+        <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
         <Wrapper >
+            <IconLeft onClick={()=> slider.current.slidePrev()}>
+              <Icons.Left  />
+            </IconLeft>
+            <IconRight  onClick={()=> slider.current.slideNext()}>
+              <Icons.Right/>
+            </IconRight>
             <AliceCarousel  
               controlsStrategy='alternate'
               mouseTracking
