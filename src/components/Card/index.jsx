@@ -1,10 +1,9 @@
 import React from 'react'
-import { Test, Container, Img, Wrapper, Infowrap, Detailes, Icon, Footer, Price, Section, Oldprice, PositionSection} from './style'
+import { Container, Img, Wrapper, Infowrap, Detailes, Icon, Footer, Price, Section, Oldprice, PositionSection} from './style'
 import  NotImage from '../../assets/img/notAvailbale.jpg'
 
 const Card = ({info}) => {
   return (
-    <Test>
     <Container>
       <PositionSection>
         <PositionSection.Featured>FEATURED</PositionSection.Featured>
@@ -45,7 +44,7 @@ const Card = ({info}) => {
       </Footer>
     </Container>
 
-    </Test>
+
   )
 }
 

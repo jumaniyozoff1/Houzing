@@ -6,16 +6,9 @@ import {ReactComponent as Beds} from '../../assets/icons/Beds.svg'
 import {ReactComponent as Zoom} from '../../assets/icons/zoom.svg'
 import {ReactComponent as Like} from '../../assets/icons/like.svg'
 
-const Test = styled.div`
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  height: 600px;
-`
 
 const Container = styled.div`
   max-width: 380px;
-  min-width: 280px;
   height: 430px;
   background: #FFFFFF;
   border: 1px solid #E6E9EC;
@@ -23,6 +16,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  :hover{
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.2);
+  }
 `
 
 
@@ -35,8 +33,14 @@ const PositionSection =styled.div`
   position: absolute;
   z-index: 999;
 `
+
+const PositionUser = styled.div`
+  position: absolute;
+
+`
+
 PositionSection.Featured = styled.div`
-  padding: 2px 3px 2px 2px;
+  /* text-align: center; */
   width: 80px;
   height: 23px;
   background: #0061DF;
@@ -47,7 +51,7 @@ PositionSection.Featured = styled.div`
 
 `
 PositionSection.ForSale = styled.div`
-  padding: 2px 2px 5px 5px;
+  text-align: center;
   width: 80px;
   height: 23px;
   background: #0D263B;
@@ -116,7 +120,6 @@ const Section = styled.div`
 `
 
 export{
-  Test,
   Container,
   Wrapper,
   Img,
@@ -127,5 +130,6 @@ export{
   Oldprice,
   Price,
   Section,
-  PositionSection
+  PositionSection,
+  PositionUser
 }

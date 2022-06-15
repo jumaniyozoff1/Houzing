@@ -30,7 +30,7 @@ const Nav = styled.nav`
 const Wrapper = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 0 20px;
+	padding: 0 50px;
 	justify-content: space-between;
 	max-width: 1440px;
 	height: 64px;

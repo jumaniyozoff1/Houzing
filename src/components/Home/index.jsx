@@ -1,14 +1,15 @@
 import React from 'react'
 import Filter from '../Filter'
 import Corusel from '../Home/Corusel'
-// import Category from './Category'
-import Card from '../Card'
+import Category from './Category'
+import Reacommended from './Recommended'
 const Home = () => {
   return (
     <div>
       <Filter/>
       <Corusel/>
-      <Card/>
+      <Reacommended/>
+      <Category/>
     </div>
   )
 }

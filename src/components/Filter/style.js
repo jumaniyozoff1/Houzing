@@ -24,7 +24,7 @@ const Form = styled.div`
 	display: flex;
 	max-width: 1440px;
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px 50px;
 `;
 const Advanced = styled.div`
 	width: fit-content;
