@@ -4,6 +4,7 @@ import Corusel from '../Home/Corusel'
 import Reacommended from './Recommended'
 import ChooseInfo from './ChooseInfo'
 import Category from './Category'
+
 const Home = () => {
   return (
     <div>

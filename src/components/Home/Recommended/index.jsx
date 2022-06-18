@@ -26,7 +26,6 @@ const Reacommended= () => {
   ];
   return (
     <Contaier>
-      
         <h1 className='title'>Reacommended</h1>
         <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
         <Wrapper >

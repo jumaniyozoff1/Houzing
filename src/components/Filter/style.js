@@ -6,6 +6,7 @@ import { ReactComponent as search } from '../../assets/icons/Search.svg';
 const Container = styled.div`
 	display: flex;
 	justify-content: center;
+
 	/* margin: 10px 0; */
 `;
 const Icon = styled.div``;
@@ -24,7 +25,7 @@ const Form = styled.div`
 	display: flex;
 	max-width: 1440px;
 	width: 100%;
-	padding: 10px 50px;
+	padding: 10px 130px;
 `;
 const Advanced = styled.div`
 	width: fit-content;

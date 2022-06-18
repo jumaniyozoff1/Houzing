@@ -4,7 +4,7 @@ import { Card, Container, Icons, Wrapper } from './style'
 const ChooseInfo = () => {
   return (
     <Container>
-        <h1  className='title'>Why Choose Us?</h1>
+        <h1  className='title margin-top'>Why Choose Us?</h1>
         <p className='description'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
       <Wrapper>
         <Card>

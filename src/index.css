@@ -13,6 +13,9 @@
 body{
     background-color: #ffffff;
 }
+.margin-top{
+    margin-top: 48px;
+}
 .title{
     height: 36px;
     text-align: center;

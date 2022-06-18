@@ -8,7 +8,7 @@ import {ReactComponent as Like} from '../../assets/icons/like.svg'
 
 
 const Container = styled.div`
-  max-width: 380px;
+  width: 350px;
   height: 430px;
   background: #FFFFFF;
   border: 1px solid #E6E9EC;

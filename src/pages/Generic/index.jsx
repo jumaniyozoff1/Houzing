@@ -1,10 +1,9 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React from 'react'
+
 
 const Generic = ()=>{
-    const Location = useLocation()
     return(
-        <div>Generic {Location.pathname}</div>
+        <div>Generic</div>
     )
 }
 export default Generic

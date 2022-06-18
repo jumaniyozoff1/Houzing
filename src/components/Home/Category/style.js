@@ -16,12 +16,11 @@ const Img =styled.img`
 const Wrapper = styled.div`
     width: 100%;
     display: flex;
-    padding: 0 50px;
+    padding: 0 100px;
+    max-width: 1440px;
     .alice-carousel{
-        max-width:  1280px;
-    }
-    .alice-carousel__stage{
-        padding: 20px;
+        max-width: 1440px;
+        text-align: center;
     }
 `
 const Icons =styled.div``
@@ -34,6 +33,7 @@ const IconLeft =styled.div`
     position: absolute;
     z-index: 999;
     top: 50%;
+    right: 92.8%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@ const  IconRight =styled.div`
     position: absolute;
     z-index: 999;
     top: 50%;
-    left: 95%;
+    left: 92.8%;
     display: flex;
     align-items: center;
     justify-content: center;

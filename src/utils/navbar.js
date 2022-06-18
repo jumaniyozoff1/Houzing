@@ -1,11 +1,12 @@
 import Generic from '../pages/Generic'
-import Home from '../components/Home'
-export const navbar = [
+import HomePage from '../pages/Home'
+import PropertiesPage from '../pages/Properties'
+export const navbar = [ 
     {
         id: 1,
         title: 'Home',
         path: '/home',
-        element:<Home/>,
+        element:<HomePage/>,
         search: '?',
         hidden: false,
         private: true
@@ -14,7 +15,7 @@ export const navbar = [
         id: 2,
         title: 'Properties',
         path: '/properties',
-        element:<Generic/>,
+        element:<PropertiesPage/>,
         search: '?',
         hidden: false,
         private: true

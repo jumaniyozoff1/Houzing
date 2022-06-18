@@ -8,12 +8,18 @@ import { ReactComponent as Map } from "../../../assets/icons/map.svg";
 const Container = styled.div`
   margin-top: 48px;
   width: 100%;
+  max-width: 1440px;
   height: 434px;
   background-color: #F5F7FC;
+  .title{
+    padding: 48px;
+  }
 
 `
 
 const Wrapper =styled.div`
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +31,8 @@ const Card =styled.div`
   flex-direction: column;
   align-items: center;
   .description{
-    width: 235px;
+    max-width: 235px;
+    height: 5%;
   }
 `
 
