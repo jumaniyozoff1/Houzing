@@ -5,19 +5,19 @@ import Card from '../Card'
 import {useQuery} from 'react-query'
 
 
-const {REACT_APP_BASE_URL: url} = process.nve 
+const {REACT_APP_BASE_URL: url} = process.env
 
 const Properties = () =>{
     const [data,setdata] = useState([])
 
-    useQuery('get started',()=>{
-        return fetch(`${url}v1/houses/list`) .then(res=>res.json())
-    },{
+    useQuery('get started', ()=>{
+        return fetch(`${url}v1/houses/list`).then(res=>res.json())
+    },
+    {
         onSuccess:(res)=>{
-            setdata(res.data)
+            setdata(res.data);
         }
     })
-
 
 
     return(

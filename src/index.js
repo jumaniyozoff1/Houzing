@@ -12,8 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     <BrowserRouter>
-      <QueryClientProvider client={query}></QueryClientProvider>
-      <Root/>
+      <QueryClientProvider client={query}>
+        <Root/>
+      </QueryClientProvider>
     </BrowserRouter>
   </div>
 );

@@ -27,7 +27,7 @@ const IconLeft =styled.div`
     position: absolute;
     z-index: 999;
     top: 43%;
-    right: 92.8%;
+    right: 93.8%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,9 +36,14 @@ const IconLeft =styled.div`
     background: #FFFFFF;
     border-radius: 50%;
     border: 1px solid #E6E9EC;
-    box-shadow: 0px 0px 55px;
     cursor: pointer;
     user-select: none;
+    @media(max-width: 1365px){
+        left:-10%;
+        top:90%;
+
+        
+    }
   
     
 `
@@ -55,7 +60,6 @@ const  IconRight =styled.div`
     background: #FFFFFF;
     border-radius: 50%;
     border: 1px solid #E6E9EC;
-    box-shadow: 0px 0px 55px;
     cursor: pointer;
     user-select: none;
   

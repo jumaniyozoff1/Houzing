@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import { Contaier, Wrapper,Icons,Icon, IconLeft, IconRight } from './style'
+import { Contaier, Wrapper,Icons, IconLeft, IconRight } from './style'
 import Card from '../../Card'
 import AliceCarousel from 'react-alice-carousel';
 
