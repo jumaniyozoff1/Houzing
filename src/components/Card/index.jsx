@@ -1,14 +1,14 @@
 import React from 'react'
-import { Container, Img, Wrapper, Infowrap, Detailes, Icon, Footer, Price, Section, Oldprice, PositionSection} from './style'
+import { Container, Img, ImgUser, Wrapper, Infowrap, Detailes, Icon, Footer, Price, Section, Oldprice, Featured,ForSale,User} from './style'
 import  NotImage from '../../assets/img/notAvailbale.jpg'
+import  NotUser from '../../assets/img/user.png'
 
 const Card = ({info}) => {
   return (
     <Container>
-      <PositionSection>
-        <PositionSection.Featured>FEATURED</PositionSection.Featured>
-        <PositionSection.ForSale>FOR SALE</PositionSection.ForSale>
-      </PositionSection>
+        <Featured>FEATURED</Featured>
+        <ForSale>FOR SALE</ForSale>
+        <User><ImgUser src={info?.notuser || NotUser}/></User>
       <Img src={info?.attachments[0]?.imgPath || NotImage}/>
       <Wrapper>
         <h2 className='sub-title'>{info?.address || 'New Apartment Nice Wiew'}</h2>

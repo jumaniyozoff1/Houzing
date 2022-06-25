@@ -1,12 +1,28 @@
+
+// const Container =styled.div`
+//     margin-top:48px;
+//     max-width: 1440px;
+//     width: 100%;
+//     height: 482px;
+//     background: #F5F7FC;
+//     padding: 48px 32px;
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: center;
+// `
+
 import styled from "styled-components";
 import {ReactComponent as Left} from '../../../assets/icons/Left.svg'
 import {ReactComponent as Right} from '../../../assets/icons/Right.svg'
 import {ReactComponent as Villa} from '../../../assets/icons/villa.svg' 
 
-const Contaier = styled.div`
+const Container = styled.div`
     position: relative;
     width: 100%;
     margin-top: 96px;
+    .card{
+        height: 250px;
+    }
 
 `
 const Img =styled.img`
@@ -86,7 +102,7 @@ Icons.Right =styled(Right)`
 
 
 export {
-    Contaier,
+    Container,
     Wrapper,
     Icons,
     Img,

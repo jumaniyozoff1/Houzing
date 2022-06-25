@@ -23,47 +23,60 @@ const Container = styled.div`
   }
 `
 
-
-const PositionSection =styled.div`
-  width: 100%;
-  padding: 20px 20px;
+const User = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
-  z-index: 999;
+  width: 42px;
+  height: 42px;
+  border-radius:50%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(13, 38, 59, 0.2);
+  top:  46.5%;
+  right:  20px;
+
 `
 
-const PositionUser = styled.div`
+const Featured = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 12px;
   position: absolute;
-
-`
-
-PositionSection.Featured = styled.div`
-  /* text-align: center; */
-  width: 80px;
   height: 23px;
+  width: 100px;
   background: #0061DF;
   border-radius: 3px;
-  color: white;
   user-select: none;
-
-
+  color: #ffffff;
+  font-weight: 600;
+  top:20px;
+  left: 3%;
 `
-PositionSection.ForSale = styled.div`
-  text-align: center;
-  width: 80px;
+
+const ForSale = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 12px;
+  color: #ffffff;
+  font-weight: 600;
+  position: absolute;
   height: 23px;
+  width: 100px;
   background: #0D263B;
   border-radius: 3px;
-  color: white; 
   user-select: none;
+  top:20px;
+  left: 68%;
 `
 
 const Img = styled.img`
   width: 100%;
   height: 220px;
 `
+const ImgUser =styled.img``
 
 const Wrapper = styled.div`
   padding: 20px 18px 10px 18px;
@@ -92,9 +105,11 @@ Icon.Baths = styled(Baths)``
 Icon.Beds = styled(Beds)``
 Icon.Zoom = styled(Zoom)`
   margin-right:20px;
-
+  cursor: pointer;
 `
-Icon.Like = styled(Like)``
+Icon.Like = styled(Like)`
+  cursor: pointer;
+`
 
 const Footer = styled.div`
   padding: 8px 20px 8px 20px;
@@ -130,6 +145,8 @@ export{
   Oldprice,
   Price,
   Section,
-  PositionSection,
-  PositionUser
+  Featured,
+  ForSale,
+  User,
+  ImgUser,
 }

@@ -1,39 +1,33 @@
 import styled from "styled-components";
 import {ReactComponent as Left} from '../../../assets/icons/Left.svg'
 import {ReactComponent as Right} from '../../../assets/icons/Right.svg'
-import {ReactComponent as Villa} from '../../../assets/icons/villa.svg' 
 
 const Contaier = styled.div`
-    position: relative;
     width: 100%;
     margin-top: 96px;
 
 `
-const Img =styled.img`
-    position: relative;
-`
-
 const Wrapper = styled.div`
+    position: relative;
     width: 100%;
     display: flex;
-    padding: 0 100px;
     max-width: 1440px;
+    padding: 0 100px;
     .alice-carousel{
         max-width: 1440px;
-        text-align: center;
+        /* border: 1px solid red; */
+    }
+    .alice-carousel__stage{
+        padding:0 7px;
     }
 `
 const Icons =styled.div``
 
-Icons.Villa =styled(Villa)`
-    position: absolute;
-`
-
 const IconLeft =styled.div`
     position: absolute;
     z-index: 999;
-    top: 50%;
-    right: 92.8%;
+    top: 43%;
+    right: 93.8%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,15 +36,21 @@ const IconLeft =styled.div`
     background: #FFFFFF;
     border-radius: 50%;
     border: 1px solid #E6E9EC;
-    /* box-shadow: 0px 0px 55px; */
     cursor: pointer;
     user-select: none;
+    @media(max-width: 1365px){
+        left:-10%;
+        top:90%;
+
+        
+    }
+  
     
 `
 const  IconRight =styled.div`
     position: absolute;
     z-index: 999;
-    top: 50%;
+    top: 43%;
     left: 92.8%;
     display: flex;
     align-items: center;
@@ -60,7 +60,6 @@ const  IconRight =styled.div`
     background: #FFFFFF;
     border-radius: 50%;
     border: 1px solid #E6E9EC;
-    /* box-shadow: 0px 0px 55px; */
     cursor: pointer;
     user-select: none;
   
@@ -84,12 +83,10 @@ Icons.Right =styled(Right)`
 `
 
 
-
 export {
     Contaier,
     Wrapper,
-    Icons,
-    Img,
     IconLeft,
     IconRight,
+    Icons,
 }

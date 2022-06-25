@@ -4,6 +4,9 @@ import Corusel from '../Home/Corusel'
 import Reacommended from './Recommended'
 import ChooseInfo from './ChooseInfo'
 import Category from './Category'
+import FarmHouse from './FarmHouse'
+import Recent from './Recent'
+// import Testimonials from './Testimonials'
 
 const Home = () => {
   return (
@@ -13,6 +16,9 @@ const Home = () => {
       <Reacommended/>
       <ChooseInfo/>
       <Category/>
+      <FarmHouse/>
+      <Recent/>
+      {/* <Testimonials/> */}
     </div>
   )
 }
