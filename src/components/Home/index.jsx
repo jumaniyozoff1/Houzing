@@ -6,6 +6,7 @@ import ChooseInfo from './ChooseInfo'
 import Category from './Category'
 import FarmHouse from './FarmHouse'
 import Recent from './Recent'
+import Footer from '../Footer'
 // import Testimonials from './Testimonials'
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Category/>
       <FarmHouse/>
       <Recent/>
+      <Footer/>
       {/* <Testimonials/> */}
     </div>
   )

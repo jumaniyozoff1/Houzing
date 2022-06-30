@@ -2,7 +2,6 @@ import React from 'react'
 import { Wrapper,Text, Inputs, Buttons } from './style'
 import Input from '../../../Generic/Input'
 import Button from '../../../Generic/Button'
- 
 
 const Advanced = () =>{
     return(

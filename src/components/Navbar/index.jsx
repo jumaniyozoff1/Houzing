@@ -13,15 +13,15 @@ const Navbar = () => {
 				<Wrapper>
 					<Logo style={{cursor: 'pointer'}} onClick={() => navigate('/home')}/>		
 					<Nav>
-						{navbar.map(({ title, path, id }) => {
-							return (
+						{navbar.map(({ title, path, id,hidden }) => {
+							return !hidden &&(
 								<Nav.Link key={id} to={path}>
 									{title}
 								</Nav.Link>
 							);
 						})}
 					</Nav>
-					<Button width="120px">Login</Button>
+					<Button width="120px" onClick={()=> navigate('./signin')}>Login</Button>
 				</Wrapper>
 			</Header>
 			<main>

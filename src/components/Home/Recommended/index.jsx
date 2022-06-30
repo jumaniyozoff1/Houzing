@@ -4,10 +4,7 @@ import Card from '../../Card'
 import AliceCarousel from 'react-alice-carousel';
 
 
-
-
-
-const Reacommended= () => {
+const Recommended= () => {
   const slider = useRef('click')
   const Responsive = {
     0:{
@@ -15,7 +12,7 @@ const Reacommended= () => {
     },
     1024:{
       items:3,
-    }
+    },
   }
   const items = [
     <Card  />,
@@ -26,7 +23,7 @@ const Reacommended= () => {
   ];
   return (
     <Contaier>
-        <h1 className='title'>Reacommended</h1>
+        <h1 className='title'>Recommended</h1>
         <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
         <Wrapper >
           <IconLeft onClick={()=> slider.current.slidePrev()}>
@@ -50,4 +47,4 @@ const Reacommended= () => {
   )
 }
 
-export default  Reacommended
+export default  Recommended

@@ -11,11 +11,9 @@ const Wrapper = styled.div`
     position: relative;
     width: 100%;
     display: flex;
-    max-width: 1440px;
     padding: 0 100px;
     .alice-carousel{
-        max-width: 1440px;
-        /* border: 1px solid red; */
+        /* padding-left: 150px;   */
     }
     .alice-carousel__stage{
         padding:0 7px;
@@ -38,12 +36,12 @@ const IconLeft =styled.div`
     border: 1px solid #E6E9EC;
     cursor: pointer;
     user-select: none;
-    @media(max-width: 1365px){
+    /* @media(max-width: 1920px){
         left:-10%;
         top:90%;
 
         
-    }
+    } */
   
     
 `
@@ -62,6 +60,12 @@ const  IconRight =styled.div`
     border: 1px solid #E6E9EC;
     cursor: pointer;
     user-select: none;
+    @media (max-width: 1920px){
+        left: 93.8%;
+    }
+    @media (min-width: 1920px){
+        left: 93.8%;
+    }
   
     
 `

@@ -11,11 +11,34 @@ const Wrapper = styled.div`
     position: relative;
     width: 100%;
     display: flex;
-    max-width: 1440px;
     padding: 0 100px;
     .alice-carousel{
-        max-width: 1440px;
-        /* border: 1px solid red; */
+        /* padding-left: 150px;
+        border: 1px solid red;
+        @media (max-width: 1366px){
+            padding-left:-10px;
+        }
+        @media (max-width: 1919px){
+            padding-left: 150px;
+        }
+        /* @media (width: 1900px){
+            padding-left: 200px;
+        } */
+        @media (min-width: 1920px){
+            padding-left: 40px;
+        }
+        @media (max-width: 1935px){
+            padding-left: 35px;
+        }
+        @media (max-width: 1980px){
+            padding-left: 50px;
+        }
+        @media (min-width: 2000px){
+            padding-left: 60px;
+        }
+        @media (min-width: 2080px){
+            padding-left: 70px;
+        } */
     }
     .alice-carousel__stage{
         padding:0 7px;
@@ -38,12 +61,10 @@ const IconLeft =styled.div`
     border: 1px solid #E6E9EC;
     cursor: pointer;
     user-select: none;
-    @media(max-width: 1365px){
-        left:-10%;
-        top:90%;
-
-        
+    @media(max-width: 1440px){
+        right:92.8%;
     }
+   
   
     
 `
@@ -62,6 +83,12 @@ const  IconRight =styled.div`
     border: 1px solid #E6E9EC;
     cursor: pointer;
     user-select: none;
+    @media (max-width: 1920px){
+        left: 93.8%;
+    }
+    @media (min-width: 1920px){
+        left: 93.8%;
+    }
   
     
 `

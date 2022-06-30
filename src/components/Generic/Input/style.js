@@ -23,6 +23,7 @@ const Icon =styled.div`
 const SearchInput =styled.input`
   display: flex;
   width: 100%;
+  flex: 1;
   padding-left: ${({pl})=> pl || '14px'};
   border-radius: 2px;
   border: none;

@@ -17,7 +17,6 @@ const Wrapper = styled.div`
     width: 100%;
     display: flex;
     padding: 0 100px;
-    max-width: 1440px;
     .alice-carousel{
         max-width: 1440px;
         text-align: center;

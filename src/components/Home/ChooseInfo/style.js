@@ -8,22 +8,29 @@ import { ReactComponent as Map } from "../../../assets/icons/map.svg";
 const Container = styled.div`
   margin-top: 48px;
   width: 100%;
-  max-width: 1440px;
   height: 434px;
   background-color: #F5F7FC;
   .title{
     padding: 48px;
+  }
+  @media (max-width: 1366px){
+    height: fit-content;
   }
 
 `
 
 const Wrapper =styled.div`
   width: 100%;
-  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px 130px;
+  @media (max-width: 1366px){
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 `
 const Card =styled.div`

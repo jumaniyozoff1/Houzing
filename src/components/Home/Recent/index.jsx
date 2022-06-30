@@ -14,7 +14,13 @@ const Recent= () => {
       items:1,
     },
     1024:{
+      items:2,
+    },
+    1330:{
       items:3,
+    },
+    1919:{
+      items:4,
     }
   }
   const items = [
