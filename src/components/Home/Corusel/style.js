@@ -2,12 +2,17 @@ import styled from 'styled-components';
 import { Carousel } from 'antd';
 import {ReactComponent as Left} from '../../../assets/icons/Left.svg'
 import {ReactComponent as Right} from '../../../assets/icons/Right.svg'
-
+import {ReactComponent as SqFt} from '../../../assets/icons/SqFt.svg'
+import {ReactComponent as Garage} from '../../../assets/icons/Garage.svg'
+import {ReactComponent as Baths} from '../../../assets/icons/Baths.svg'
+import {ReactComponent as Beds} from '../../../assets/icons/Beds.svg'
 
 
 
 const Wrapper = styled.div`
     position: relative;
+
+
 `
 
 const Container = styled(Carousel)``
@@ -84,57 +89,71 @@ const IconRight =styled.div`
 
 
 
+const Position =styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 7;
+    left: 32%;
+    /* top: 50%; */
+    .title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-top: 130px;
+    }
+    .sub-title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-top: 5px;
+
+    }
+    .title-small{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+`
 
 
-// const LeftArrow = styled.img`
-//     position: absolute;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 45px;
-//     height: 45px;
-//     padding: 12px;
-//     color: white;
-//     background-color: white;
-//     opacity: 0.5;
-//     border-radius: 50%;
-//     z-index: 999;
-//     cursor: pointer;
-//     user-select: none;
-//     transform: translate(-100%,-40%);
-//     :hover{
-//         opacity: 0.77;
-//     }
-//     & path {
-//         fill: #0d263b;
-//     }
-// `
+const Infowrap = styled.div`
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 10px;
+`
 
-// const RightArrow = styled.img`
-//     position: absolute;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 45px;
-//     height: 45px;
-//     padding: 12px;
-//     color: white;
-//     background-color: white;
-//     opacity: 0.5;
-//     border-radius: 50%;
-//     z-index: 999;
-//     transform: translate(-100%,-40%);
-//     cursor: pointer;
-//     user-select: none;
-//     :hover{
-//         opacity: 0.77;
-//     }
-//     & path {
-//         fill: #0d263b;
-//     }
-// `
+const Detailes = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .small-description{
+    color: #ffffff;
+  }
 
+`
 
+const Icon = styled.div``
+Icon.SqFt = styled(SqFt)``
+Icon.Garage = styled(Garage)``
+Icon.Baths = styled(Baths)``
+Icon.Beds = styled(Beds)``
 
 
 export{
@@ -145,6 +164,10 @@ export{
     RightArrow,
     IconLeft,
     IconRight,
+    Position,
+    Infowrap,
+    Detailes,
+    Icon,
 }
 
 

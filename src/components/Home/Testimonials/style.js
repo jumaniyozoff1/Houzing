@@ -1,111 +1,27 @@
-
-// const Container =styled.div`
-//     margin-top:48px;
-//     max-width: 1440px;
-//     width: 100%;
-//     height: 482px;
-//     background: #F5F7FC;
-//     padding: 48px 32px;
-//     // display: flex;
-//     // align-items: center;
-//     // justify-content: center;
-// `
-
 import styled from "styled-components";
-import {ReactComponent as Left} from '../../../assets/icons/Left.svg'
-import {ReactComponent as Right} from '../../../assets/icons/Right.svg'
-import {ReactComponent as Villa} from '../../../assets/icons/villa.svg' 
 
-const Container = styled.div`
-    position: relative;
-    width: 100%;
-    margin-top: 96px;
-    .card{
-        height: 250px;
+const Container =styled.div`
+    padding: 50px 50px;
+    .sc-jOrMOR{
+        background-color : #ffffff;
+        :hover{
+            background-color: var(--activeColor);
+        }
+        /* :active{
+            background-color: var(--);
+        } */
     }
+    .sc-hTtwUo{
+        width: 7px;
+        height: 7px;
+        box-shadow: 0 0 1px 2px var(--activeColor);
+    }
+    .eViXaP{
+        background-color: var(--activeColor);
 
-`
-const Img =styled.img`
-    position: relative;
-`
-
-const Wrapper = styled.div`
-    width: 100%;
-    display: flex;
-    padding: 0 100px;
-    max-width: 1440px;
-    .alice-carousel{
-        max-width: 1440px;
-        text-align: center;
     }
 `
-const Icons =styled.div``
 
-Icons.Villa =styled(Villa)`
-    position: absolute;
-`
-
-const IconLeft =styled.div`
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    right: 92.8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background: #FFFFFF;
-    border-radius: 50%;
-    border: 1px solid #E6E9EC;
-    /* box-shadow: 0px 0px 55px; */
-    cursor: pointer;
-    user-select: none;
-    
-`
-const  IconRight =styled.div`
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    left: 92.8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background: #FFFFFF;
-    border-radius: 50%;
-    border: 1px solid #E6E9EC;
-    /* box-shadow: 0px 0px 55px; */
-    cursor: pointer;
-    user-select: none;
-  
-    
-`
-Icons.Left =styled(Left)`
-    user-select: none;
-    position: relative;
-    z-index: 999;
-    right: 3px;
-    width: 18px;
-    height: 18px;
-`
-Icons.Right =styled(Right)`
-    user-select: none;
-    position: relative;
-    z-index: 999;
-    left: 4px;
-    width: 18px;
-    height: 18px;
-`
-
-
-
-export {
+export{
     Container,
-    Wrapper,
-    Icons,
-    Img,
-    IconLeft,
-    IconRight,
 }

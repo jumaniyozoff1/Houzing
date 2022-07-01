@@ -1,51 +1,37 @@
 import React,{useRef} from 'react'
-import { Container, Wrapper,Icons,Img,IconLeft,IconRight } from './style'
-import AliceCarousel from 'react-alice-carousel';
-import Villa from '../../../assets/img/villa.png'
+import { Container } from './style'
 import GenericCard from './GenericCard'
+import Carousel from "react-elastic-carousel";
 
-
-const Category= () => {
-  const slider = useRef('click')
-  const Responsive = {
-    0:{
-      items:1,
-    },
-    1024:{
-      items:2,
-    }
-  }
-  const items = [
-    <GenericCard className='card'/>,
-    <GenericCard/>,
-    <GenericCard/>,
-    <GenericCard/>,
-    // <Img  src={Villa}></Img>,
+const Recommended = () =>{
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 850, itemsToShow: 2 },
+    { width: 1180, itemsToShow: 3 },
+    // { width: 1440, itemsToShow: 4 },
+    // { width: 1440, itemsToShow: 4 },
   ];
-  return (
+  return(
     <Container>
-        <h1 className='title'>Category</h1>
-        <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
-        <Wrapper >
-            <IconLeft onClick={()=> slider.current.slidePrev()}>
-              <Icons.Left  />
-            </IconLeft>
-            <IconRight  onClick={()=> slider.current.slideNext()}>
-              <Icons.Right/>
-            </IconRight>
-            <AliceCarousel  
-              controlsStrategy='alternate'
-              mouseTracking
-              keyboardNavigation={true} 
-              disableButtonsControls={true}
-              responsive={Responsive}
-              infinite={true}
-              items={items} 
-              ref={slider}
-            />
-        </Wrapper>
+        <Carousel 
+          itemsToShow={4}
+          itemsToScroll={1}
+          breakPoints ={breakPoints}
+          itemPadding={[0, 20]}
+          enableMouseSwipe={true}   
+          // showArrows={false}
+        >
+          <GenericCard/>
+          <GenericCard/>
+          <GenericCard/>
+          <GenericCard/>
+          <GenericCard/>
+          <GenericCard/>
+          <GenericCard/>
+          <GenericCard/>
+        </Carousel>
     </Container>
   )
 }
-
-export default  Category
+export default Recommended
