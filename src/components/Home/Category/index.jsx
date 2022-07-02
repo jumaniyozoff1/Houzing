@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import { Contaier, } from './style'
+import { Container, } from './style'
 import Carousel from "react-elastic-carousel";
 import AliceCarousel from 'react-alice-carousel';
 // import House from '../../../assets/img/house.png'
@@ -21,7 +21,7 @@ const Category= () => {
     { width: 1920, itemsToShow: 3 },
   ];
   return (
-    <Contaier>
+    <Container>
         <h1 className='title'>Category</h1>
         <p className='description text-center'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
         <Carousel 
@@ -37,7 +37,7 @@ const Category= () => {
           <Office/>
           <Office/>
         </Carousel>
-    </Contaier>
+    </Container>
   )
 }
 

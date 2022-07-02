@@ -3,6 +3,9 @@ import styled from "styled-components";
 const Container =styled.div`
     margin-top: 96px;
     padding: 50px 50px;
+    @media (max-width:600px){
+        padding: 50px 5px;
+    }
     .blNrpH{
         background-color : #ffffff;
         :hover{
@@ -12,6 +15,9 @@ const Container =styled.div`
             position: relative;
             top: 60%;
             left: 80px;
+        }
+        @media (max-width: 500px){
+            display: none;
         }
     }
     .gqGntl{
@@ -24,6 +30,9 @@ const Container =styled.div`
             top: 60%;
             right: 80px;
         }
+        @media (max-width: 500px){
+            display: none;
+        } 
     }
     .description{
         @media (max-width: 690px){

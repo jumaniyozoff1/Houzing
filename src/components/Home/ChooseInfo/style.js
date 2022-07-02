@@ -45,6 +45,9 @@ const Wrapper =styled.div`
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 540px){
+      padding: 50px 10px;
+  }
 
 
 `

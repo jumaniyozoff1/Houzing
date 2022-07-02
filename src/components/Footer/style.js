@@ -27,6 +27,9 @@ const Wrapper =styled.div`
     @media (max-width: 1044px){
         flex-direction: column;
     }
+    @media (max-width: 1000px){
+        padding:48px 50px;
+    }
     .sub-title{
         color: #ffffff;
         padding-bottom: 20px;
