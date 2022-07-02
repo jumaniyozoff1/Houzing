@@ -12,6 +12,7 @@ const Container = styled.div`
 const Img =styled.img`
     width: 100%;
     height: 571px;
+    object-fit: cover;
     filter: brightness(45%);
 `
 const Title =styled.div`

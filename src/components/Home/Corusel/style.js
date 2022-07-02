@@ -19,6 +19,9 @@ const Container = styled(Carousel)`
 `
 
 const Img = styled.img`
+    width: 100%;
+    height: 571px;
+    filter: brightness(45%);
     object-fit: cover;
 `
 
