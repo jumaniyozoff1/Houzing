@@ -15,10 +15,11 @@ const Wrapper = styled.div`
 
 `
 
-const Container = styled(Carousel)``
+const Container = styled(Carousel)`
+`
 
 const Img = styled.img`
-    filter: brightness(45%);
+    object-fit: cover;
 `
 
 
@@ -51,10 +52,9 @@ const IconLeft =styled.div`
     :hover{
         opacity: 0.3;
     }
-    /* @media(max-width: 1366px){
-        left:-10%;
-        top:90%;  
-    } */
+    @media(max-width: 935px){
+        display: none;
+    }
   
     
 `
@@ -79,10 +79,9 @@ const IconRight =styled.div`
     :hover{
         opacity: 0.3;
     }
-    /* @media(max-width: 1365px){
-        left:-10%;
-        top:90%;        
-    } */
+    @media(max-width: 935px){
+        display: none;
+    }
   
     
 `
@@ -97,7 +96,7 @@ const Position =styled.div`
     position: absolute;
     z-index: 7;
     left: 32%;
-    /* top: 50%; */
+    display: none;
     .title{
         font-family: 'Montserrat';
         font-style: normal;
@@ -107,6 +106,12 @@ const Position =styled.div`
         letter-spacing: -0.02em;
         color: #FFFFFF;
         margin-top: 130px;
+        @media (max-width: 935px){
+            margin-top: 30px;
+        }
+        @media (max-width: 935px){
+            font-size: 28px;
+        }
     }
     .sub-title{
         font-family: 'Montserrat';
@@ -127,6 +132,9 @@ const Position =styled.div`
         letter-spacing: -0.02em;
         color: #FFFFFF;
         margin-top: 10px;
+    }
+    @media (max-width: 935px){
+        left: 32%;
     }
 `
 

@@ -13,10 +13,10 @@ const Container = styled.footer`
     height: 417px;
     margin-top: 48px;
     background: #0D263B;
-    /* @media (max-width: 1366px){
+    @media (max-width:1044px){
         height: fit-content;
         
-    } */
+    }
 
 `
 const Wrapper =styled.div`
@@ -24,9 +24,9 @@ const Wrapper =styled.div`
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    /* @media (max-width: 1366px){
+    @media (max-width: 1044px){
         flex-direction: column;
-    } */
+    }
     .sub-title{
         color: #ffffff;
         padding-bottom: 20px;

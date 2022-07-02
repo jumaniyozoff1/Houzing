@@ -22,15 +22,25 @@ const Title =styled.div`
     width: fit-content;
     z-index: 999;
     .title{
-    width: 567px;
-    height: 72px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
+        width: 567px;
+        height: 72px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        @media (max-width:700px){
+            width: 343px;
+            height: 144px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 36px;
+            color: #FFFFFF;
+        }
+    
     }
 `
 

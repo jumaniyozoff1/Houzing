@@ -6,10 +6,17 @@ import { ReactComponent as search } from '../../assets/icons/Search.svg';
 const Container = styled.div`
 	display: flex;
 	justify-content: center;
+	@media (max-width: 934px){
+		display: none;
+	}
 	
 
-	/* margin: 10px 0; */
 `;
+const Focus=styled.div`
+	@media (max-width: 934px){
+		display: flex;
+	}
+`
 const Icon = styled.div``;
 Icon.HomeLogo = styled(Home)`
 	margin-top: 6px;
@@ -50,4 +57,4 @@ Advanced.Button = styled.div`
 	justify-content: space-between;
 
 `
-export { Container, Form, Icon, Advanced };
+export { Container, Form, Icon, Advanced,};

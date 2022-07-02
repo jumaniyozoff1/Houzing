@@ -1,9 +1,8 @@
 import React from 'react';
-import { Container, Header, Nav, Wrapper } from './style';
+import { Container, Header, Nav, Wrapper,NavLogo, Login,Icon } from './style';
 import { navbar } from '../../utils/navbar';
 import {Outlet, useNavigate,useLocation } from 'react-router-dom';
 import  Button  from '../Generic/Button';
-import { ReactComponent as Logo } from '../../assets/icons/Logo.svg';
 
 const Navbar = () => {
 	const navigate = useNavigate();
@@ -12,7 +11,8 @@ const Navbar = () => {
 		<Container className='navbar'>
 			<Header>
 				<Wrapper>
-					<Logo style={{cursor: 'pointer'}} onClick={() => navigate('/home')}/>		
+					<Icon.NavMenu/>
+					<NavLogo style={{cursor: 'pointer'}} onClick={() => navigate('/home')}/>		
 					<Nav>
 						{navbar.map(({ title, path, id,hidden }) => {
 							return !hidden &&(
@@ -22,9 +22,12 @@ const Navbar = () => {
 							);
 						})}
 					</Nav>
-					{
-						Locatin.pathname !== '/signin' && <Button width="120px" onClick={()=> navigate('./signin')}>Login</Button>
-					}
+					<Icon.NavUser/>
+					<Login>
+						{
+							Locatin.pathname !== '/signin' && <Button className='loginButton' width="120px" onClick={()=> navigate('./signin')}>Login</Button>
+						}
+					</Login>
 					
 				</Wrapper>
 			</Header>

@@ -1,22 +1,44 @@
 import styled from "styled-components";
 
 const Container =styled.div`
+    margin-top: 96px;
     padding: 50px 50px;
-    /* .sc-jOrMOR{
+    .blNrpH{
         background-color : #ffffff;
         :hover{
             background-color: var(--activeColor);
         }
-    } */
-    /* .sc-hTtwUo{
-        width: 7px;
-        height: 7px;
-        box-shadow: 0 0 1px 2px var(--activeColor);
-    } */
-    /* .eViXaP{
-        background-color: var(--activeColor);
-
-    } */
+        @media (max-width: 700px){
+            position: relative;
+            top: 60%;
+            left: 80px;
+        }
+    }
+    .gqGntl{
+        background-color : #ffffff;
+        :hover{
+            background-color: var(--activeColor);
+        }
+        @media (max-width: 700px){
+            position: relative;
+            top: 60%;
+            right: 80px;
+        }
+    }
+    .description{
+        @media (max-width: 690px){
+            display: none;
+           
+        }
+    }
+    .dec{
+        display: none;
+        @media (max-width: 690px){
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+    }    
 `   
 
 export{

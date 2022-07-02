@@ -5,7 +5,8 @@ const ChooseInfo = () => {
   return (
     <Container>
         <h1  className='title margin-top'>Why Choose Us?</h1>
-        <p className='description'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
+        <p className='description nonedec'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
+        <p className='description dec'>112 Glenwood Ave Hyde Park, Boston, MA</p>
       <Wrapper>
         <Card>
           <Icons.Discord/>

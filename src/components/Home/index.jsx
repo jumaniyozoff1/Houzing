@@ -16,7 +16,7 @@ const Home = () => {
       <Corusel/>
       <Reacommended/>
       <ChooseInfo/>
-      <Category/>
+      {/* <Category/> */}
       <FarmHouse/>
       <Recent/>
       {/* <Testimonials/> */}

@@ -16,6 +16,20 @@ const Container = styled.div`
   @media (max-width: 1366px){
     height: fit-content;
   }
+  .nonedec{
+      @media (max-width: 690px){
+          display: none;
+         
+      }
+  }
+  .dec{
+      display: none;
+      @media (max-width: 690px){
+          display: flex;
+          align-items: center;
+          justify-content:center;
+      }
+  }
 
 `
 
@@ -31,6 +45,7 @@ const Wrapper =styled.div`
     align-items: center;
     justify-content: center;
   }
+
 
 `
 const Card =styled.div`
@@ -60,6 +75,7 @@ const Icons=styled.div``
   Icons.Map=styled(Map)`
     margin-bottom: 5px;
   `
+
 
 export{
   Container,
