@@ -92,14 +92,14 @@ const IconRight =styled.div`
 
 
 const Position =styled.div`
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 7;
     left: 32%;
-    display: none;
+    /* display: none; */
     .title{
         font-family: 'Montserrat';
         font-style: normal;
@@ -161,7 +161,11 @@ const Detailes = styled.div`
 `
 
 const Icon = styled.div``
-Icon.SqFt = styled(SqFt)``
+Icon.SqFt = styled(SqFt)`
+    /* &path{
+        fill: white;
+    } */
+`
 Icon.Garage = styled(Garage)``
 Icon.Baths = styled(Baths)``
 Icon.Beds = styled(Beds)``

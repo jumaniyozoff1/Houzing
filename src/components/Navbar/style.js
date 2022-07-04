@@ -82,6 +82,7 @@ const Icon =styled.div``
 
 Icon.NavMenu = styled(NavMenu)`
 	display: none;
+	cursor: pointer;
 	@media (max-width:934px){
 		display: flex;
 	}
@@ -89,6 +90,7 @@ Icon.NavMenu = styled(NavMenu)`
 
 Icon.NavUser = styled(NavUser)`
 	display: none;
+	cursor: pointer;
 	@media (max-width:934px){
 		display: flex;
 	}

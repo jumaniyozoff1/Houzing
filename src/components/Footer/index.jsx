@@ -1,5 +1,5 @@
 import React from 'react'
-import {CategorySection, ContactSection, Container, DiscoverSection, Icon, ListSection, Wrapper } from './style'
+import {CategorySection, ContactSection, Container, DiscoverSection, FooterBottom, Icon, ListSection, Wrapper } from './style'
 
 
 const Footer = () =>{
@@ -12,18 +12,20 @@ const Footer = () =>{
                         <Icon.Pin/>
                         <p className='des location'>329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
                     </ContactSection.item>
-                    <ContactSection.item>
+                    <ContactSection.item className="phoneNumber">
                         <Icon.Phone/>
                         <p className='des'>+998 33 420 70 71</p>
                     </ContactSection.item>
                     <ContactSection.item>
                         <Icon.Email/>
-                        <p className='des'>support@houzing.com</p>
+                        <p className='des'>jumaniyozov0202@gmail.com</p>
                     </ContactSection.item>
                     <ContactSection.item>
                         <Icon.Fb/>
                         <Icon.Tw/>
-                        <Icon.Insta/>
+                        <a href="https://www.instagram.com/jumaniyozoff1">
+                            <Icon.Insta/>
+                        </a>
                         <Icon.In/>
                     </ContactSection.item>
                 </ContactSection>
@@ -51,6 +53,15 @@ const Footer = () =>{
                     <p className='des'>Contact Us</p>
                 </CategorySection>
             </Wrapper>
+            <FooterBottom>
+                <Icon.NavLogo/>
+                <div>
+                    <p className='description'>Copyright © 2021 CreativeLayers. All Right Reserved.</p>
+                    <span>
+                        <Icon.BottomIcon/>
+                    </span>
+                </div>
+            </FooterBottom>
         </Container>
     )
 }

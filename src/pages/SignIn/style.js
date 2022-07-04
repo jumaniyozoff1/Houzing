@@ -5,11 +5,11 @@ const Container =styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     flex-direction: column;
 
 `
 const Wrapper =styled.div`
+    margin-top: 150px;
     width: 520px;
     height: 300px;
     background: #FFFFFF;
@@ -27,6 +27,12 @@ const Wrapper =styled.div`
         line-height: 20px;
         color: #0D263B;
         margin-top: 10px;
+    }
+    span{
+        user-select: none;
+        cursor: pointer;
+        color: var(--activeColor);
+        font-weight: 520;
     }
 
 `

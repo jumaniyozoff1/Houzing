@@ -1,42 +1,41 @@
 import React,{useRef} from 'react'
 import { Container } from './style'
 import Card from '../../Card'
-import Carousel from "react-elastic-carousel";
+import { Swiper } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 
 const Recommended = () =>{
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 1 },
-    { width: 980, itemsToShow: 2 },
-    { width: 1120, itemsToShow: 3 },
-    { width: 1305, itemsToShow: 3 },
-    { width: 1440, itemsToShow: 3 },
-    { width: 1920, itemsToShow: 3 },
-  ];
   return(
     <Container>
-      <h1 className='title'>Recommended</h1>
-      <p className='description'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
-      <p className='description dec'>112 Glenwood Ave Hyde Park, Boston, MA</p>
-        <Carousel 
-          itemsToShow={4}
-          itemsToScroll={1}
-          breakPoints ={breakPoints}
-          itemPadding={[0, 20]}
-          enableMouseSwipe={true}   
-          // showArrows={false}
-        >
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-        </Carousel>
+      <Swiper
+					className="products__slider"
+					loop={true} 
+					navigation={true} 
+					spaceBetween={20} 
+					pagination={{
+						clickable: true,
+						dynamicBullets: true,
+					}}
+					modules={[Pagination, Navigation]} 
+          breakpoints={{
+						0: {
+							slidesPerView: 1,
+						},
+						640: {
+							slidesPerView: 2,
+						},
+						1024: {
+							slidesPerView: 3,
+						},
+					}}
+				>
+          <Card/>
+          <Card/>
+          <Card/>
+				</Swiper>
     </Container>
   )
 }

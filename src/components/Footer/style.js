@@ -6,12 +6,14 @@ import { ReactComponent as Fb } from "../../assets/icons/fb.svg";
 import { ReactComponent as Tw } from "../../assets/icons/tw.svg";
 import { ReactComponent as Insta } from "../../assets/icons/insta.svg";
 import { ReactComponent as  In } from "../../assets/icons/in.svg";
+import { ReactComponent as  NavLogo } from "../../assets/icons/Logo.svg";
+import { ReactComponent as  BottomIcon } from "../../assets/icons/bottomIcon.svg";
  
 const Container = styled.footer`
     /* max-width: 1440px; */
     width: 100%;
-    height: 417px;
-    margin-top: 48px;
+    height: 450px;
+    margin-top: 38px;
     background: #0D263B;
     @media (max-width:1044px){
         height: fit-content;
@@ -51,13 +53,14 @@ const Wrapper =styled.div`
 const ContactSection =styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    /* gap: 5px; */
+    .phoneNumber{
+        margin-top: 20px;
+    }
 `
 ContactSection.item =styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 21px;
+    /* justify-content: center; */
     /* gap: 5px; */
 `
 const DiscoverSection =styled.div`
@@ -78,14 +81,57 @@ const CategorySection =styled.div`
 `
 const Icon =styled.div``
 
-Icon.Pin =styled(Pin)``
+Icon.Pin =styled(Pin)`
+    position: relative;
+    top: 10px;
+`
 Icon.Phone =styled(Phone)``
-Icon.Email =styled(Email)``
-Icon.Fb =styled(Fb)``
-Icon.Tw =styled(Tw)``
-Icon.Insta =styled(Insta)``
-Icon.In =styled(In)``
+Icon.Email =styled(Email)`
+    position: relative;
+    top: 2px;
+`
+Icon.Fb =styled(Fb)`
+ cursor: pointer;
+`
+Icon.Tw =styled(Tw)`
+ cursor: pointer;
+`
+Icon.Insta =styled(Insta)`
+ cursor: pointer;
+`
+Icon.In =styled(In)`
+ cursor: pointer;
+`
+Icon.NavLogo=styled(NavLogo)``
+Icon.BottomIcon =styled(BottomIcon)``
 
+const FooterBottom =styled.div`
+    padding: 13px 130px 0 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    p{
+        color: #ffffff;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+    span{
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50px;
+        width: 35px;
+        height: 35px;
+        background: #0061DF;
+        border-radius: 3px;
+    }
+`
 export{
     Container,
     Wrapper,
@@ -94,4 +140,5 @@ export{
     ListSection,
     CategorySection,
     Icon,
+    FooterBottom,
 }
