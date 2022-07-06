@@ -1,7 +1,7 @@
 import React,{useRef} from 'react'
 import { Container } from './style'
 import Card from '../../Card'
-import { Swiper } from "swiper/react";
+import { Swiper,SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -28,13 +28,34 @@ const Recommended = () =>{
 							slidesPerView: 2,
 						},
 						1024: {
+							slidesPerView: 2,
+						},
+            1330: {
 							slidesPerView: 3,
+						},
+            1900: {
+							slidesPerView: 4,
 						},
 					}}
 				>
-          <Card/>
-          <Card/>
-          <Card/>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
 				</Swiper>
     </Container>
   )

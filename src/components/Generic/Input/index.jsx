@@ -1,7 +1,23 @@
-import React,{useRef} from 'react';
+import React,{forwardRef} from 'react';
 import { Container, Icon, SearchInput } from './style';
 
-const Input = ({ref,width, height, type, mt, mb, mr, ml, pl, onChange, placeholder, onClick, children }) => {
+const Input =  forwardRef((
+  {
+    name,
+    defaultValue,
+    width, 
+    height, 
+    type, 
+    mt, 
+    mb, 
+    mr, 
+    ml, 
+    pl, 
+    onChange, 
+    placeholder, 
+    onClick, 
+    children 
+  },ref)=>{
   return (
     <Container
       width={width}
@@ -16,12 +32,16 @@ const Input = ({ref,width, height, type, mt, mb, mr, ml, pl, onChange, placehold
     >
       <Icon>{children}</Icon>
       <SearchInput 
-      placeholder={placeholder}
+      defaultValue={defaultValue}
       ref={ref}
+      name={name}
+      placeholder={placeholder}
       onChange={onChange}
       pl={pl} type='text'/>
     </Container>
   );
-};
+})
+
+
 
 export default Input;

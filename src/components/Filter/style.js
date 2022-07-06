@@ -54,7 +54,7 @@ Advanced.Input = styled.div`
 `;
 Advanced.Button = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 
 `
 export { Container, Form, Icon, Advanced,};

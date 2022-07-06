@@ -6,29 +6,30 @@ import {useMutation} from 'react-query'
 import { useNavigate } from 'react-router-dom'
 
 
-const {REACT_APP_BASE_URL : url} =process.env
-
-
+const {REACT_APP_BASE_URL: url} =process.env
 const SignIn = () => {
+  const {mutate} = useMutation(()=>{
+    fetch(`${url}public/auth/login`, {method:'POST',
+    headers:{'Content-type':'application/json'},
+    body:JSON.stringify({email:emailRef.current.value,password:pwRef.current.value})})
+    .then(res=> res.json())
+  },
+  {
+    onSuccess:(res)=>{
+      console.log(res.authenticationToken);
+    },
+    onError:(err)=>{
+      // console.log(err);
+    }
+  })
+
   const navigate =useNavigate()
   const emailRef = useRef('')
   const pwRef = useRef('')
-  const {mutate} = useMutation(()=>{
-    return(
-      fetch(`${'url'}public/auth/login`,
-      {method:'POST',
-      headers:{'Content-type':'appliaction/json'},
-      body:JSON.stringify({email:emailRef.corrent.value, password: pwRef.corrent.value})
-      }
-      ) 
-      .then(res=> res.json)
-    )
-  },
-  )
-
+  
   const onSubmit = ()=>{
     mutate()
-  }
+  }  
   return (
     <Container>
       <Wrapper>
@@ -44,3 +45,20 @@ const SignIn = () => {
 }
 
 export default SignIn
+
+
+
+
+
+  // const {mutate} = useMutation(()=>{
+  //   return(
+  //     fetch(`${url}public/auth/login`,
+  //     {method:'POST',
+  //     headers:{'Content-type':'appliaction/json'},
+  //     body:JSON.stringify({email:emailRef.current.value, password: pwRef.current.value})
+  //     }
+  //     ) 
+  //     .then(res=> res.json)
+  //   )
+  // },
+  // )

@@ -23,6 +23,7 @@ const Icon =styled.div`
 const SearchInput =styled.input`
   display: flex;
   width: 100%;
+  height: 100%;
   flex: 1;
   padding-left: ${({pl})=> pl || '14px'};
   border-radius: 2px;
@@ -32,6 +33,9 @@ const SearchInput =styled.input`
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  :focus{
+    box-shadow: 0px 0px 5px 0.2px var(--activeColor);
+  }
 `
 
 
