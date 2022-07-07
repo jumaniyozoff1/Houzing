@@ -13,6 +13,7 @@ const Container = styled.div`
   margin-right: ${({mr})=> `${mr}px`};
   margin-left: ${({ml})=> `${ml}px`};
   border: 1px solid #E6E9EC;
+  border-radius: 5px;
 `
 const Icon =styled.div`
   position: absolute;

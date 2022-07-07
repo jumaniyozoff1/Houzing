@@ -4,6 +4,29 @@ const Container =styled.div`
     padding: 96px 0px 96px;
     padding: 96px 50px;
 	overflow: hidden;
+	.dec{
+		display: none;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: #696969;
+		@media (max-width: 560px){
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			display: flex;
+			padding-top: 20px;
+		}
+		@media (max-width: 401px){
+			padding-top: 20px;
+		}
+	}
+	.description{
+		@media (max-width: 560px){
+			display: none;
+		}
+	}
     .swiper-pagination-bullet {
 		background: #0061df;
 		border: 2px solid #fff;

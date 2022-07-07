@@ -1,89 +1,172 @@
 import styled from "styled-components";
-import AliceCarousel from 'react-alice-carousel';
-import { ReactComponent as LeftArrow} from '../../../assets/icons/Left.svg'
-import { ReactComponent as RightArrow} from '../../../assets/icons/Right.svg'
 
-
-const Container = styled.div`
-    margin-top:  96px;
-    width: 100%;
-`;
-const Wrapper = styled.div`
-	margin: 32px 0px;
-    width: 100%;
-    position: relative;
-    height: fit-content;
-    .alice-carousel{
-        padding: 0 50px;
-    }
-	.alice-carousel__stage-item{
-        /* border:1px solid red;     */
-        padding: 0 33px;
-        @media (max-width:1390px){
-            padding: 0 30px;
+const Container =styled.div`
+    padding: 96px 0px 96px;
+    padding: 96px 50px;
+	overflow: hidden;
+	.dec{
+		display: none;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: #696969;
+		@media (max-width: 560px){
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			display: flex;
+			padding-top: 20px;
+		}
+		@media (max-width: 401px){
+			padding-top: 20px;
+		}
+	}
+	.description{
+		@media (max-width: 560px){
+			display: none;
+		}
+	}
+    .swiper-pagination-bullet {
+		background: #0061df;
+		border: 2px solid #fff;
+		box-sizing: content-box;
+		opacity: 1;
+		transition: border 0.3s ease 0s;
+		margin: 0px 13px 0px 0px !important;
+		&:last-child {
+			margin: 0 !important;
+		}
+	}
+	.swiper-pagination-bullet-active {
+		border: 2px solid #0061df;
+		background-color: #fff;
+	}
+	.swiper-pagination-bullet-active-prev,
+	.swiper-pagination-bullet-active-next {
+		transform: scale(0.8);
+	}
+	.swiper-pagination-bullet-active-next-next,
+	.swiper-pagination-bullet-active-prev-prev {
+		transform: scale(0.7);
+	}
+	.swiper {
+		padding: 0px 0px 65px 0px;
+		display: flex;
+		overflow: visible;
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			width: 100vw;
+			height: 100%;
+			position: absolute;
+			background-color: #fff;
+			top: 0;
+		}
+		&::before {
+			z-index: 10;
+			left: 0;
+			transform: translate(-100%, 0);
+		}
+		&::after {
+			transform: translate(100%, 0);
+			z-index: 10;
+			right: 0;
+		}
+	}
+	.swiper-wrapper {
+		align-items: stretch;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		padding: 0;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.2);
+		transition: all 0.2s ease 0s;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: #ffffff;
+		border: 1px solid #e6e9ec;
+		box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
+		z-index: 11;
+		&:hover {
+			box-shadow: 0px 0px 0px 5px rgba(181, 178, 178, 0.2);
+		}
+		&:active {
+			transform: translate(-5px, 0);
+		}
+		&::after {
+			transform: translate(-1px, 0);
+			font-size: 16px;
+			font-weight: 700;
+			color: #000;
+			opacity: 1;
+		}
+	}
+	.swiper-button-prev {
+		left: -98px;
+	}
+	.swiper-button-next {
+		right: -98px;
+		&:active {
+			transform: translate(5px, 0);
+		}
+		&::after {
+			transform: translate(1px, 0);
+		}
+	}
+    /* .swiper-button-prev {
+        @media (max-width: 1090px) {
+            position: relative;
+            top: 100%;
+            
         }
-	}
-`
-const Carousel = styled(AliceCarousel)`
-`;
-const Icon = styled.div``;
-Icon.Left = styled(LeftArrow)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 47%;
-	left: -30px;
-	transform: translate(100%, -50%);
-	width: 45px;
-	height: 45px;
-	padding: 12px;
-	color: white;
-	background: white;
-	padding: 12px;
-	opacity: 0.5;
-	border-radius: 50%;
-	z-index: 999;
-	cursor: pointer;
-    border: 1px solid #E6E9EC;
-    -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-	:hover {
-		opacity: 0.77;
-	}
-	& path {
-		fill: #0d263b;
-	}
-`;
-Icon.Right = styled(RightArrow)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 46%;
-	right: -30px;
-	transform: translate(-100%, -40%);
-	width: 45px;
-	height: 45px;
-	padding: 12px;
-	color: white;
-	background: white;
-	padding: 12px;
-	opacity: 0.5;
-	border-radius: 50%;
-	z-index: 999;
-	cursor: pointer;
-    -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    border: 1px solid #E6E9EC;
-	:hover {
-		opacity: 0.97;
-	}
-	& path {
-		fill: #0d263b;
-	}
-`;
+	} */
 
-export {Container,Carousel,Wrapper,Icon}
+	@media only screen and (max-width: 1439.98px) {
+		.swiper-button-prev,
+		.swiper-button-next {
+			top: 100%;
+			transform: translate(0, -50%);
+		}
+		.swiper-button-prev {
+			left: 10px;
+			&:active {
+				transform: translate(-5px, -50%);
+			}
+		}
+		.swiper-button-next {
+			right: 10px;
+			&:active {
+				transform: translate(5px, -50%);
+			}
+		}
+	}
+	@media only screen and (max-width: 1023.98px) {
+		padding: 32px 0px 32px;
+	}
+	@media only screen and (max-width: 992.98px) {
+		padding: 64px 0px 64px;
+	}
+  
+`
+
+const Wrapper = styled.div`
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0px 16px;
+`
+
+    
+
+
+export{
+    Container,
+	Wrapper
+}

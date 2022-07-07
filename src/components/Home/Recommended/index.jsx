@@ -10,8 +10,10 @@ import "swiper/css/navigation";
 const Recommended = () =>{
   return(
     <Container>
+      <h1 className='title'>Recommended</h1>
+      <p className='dec'>112 Glenwood Ave Hyde Park, Boston, MA</p>
+      <p className='description'>Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</p>
       <Wrapper>
-
       <Swiper
 					className="products__slider"
 					loop={true} 

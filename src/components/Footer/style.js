@@ -10,14 +10,12 @@ import { ReactComponent as  NavLogo } from "../../assets/icons/Logo.svg";
 import { ReactComponent as  BottomIcon } from "../../assets/icons/bottomIcon.svg";
  
 const Container = styled.footer`
-    /* max-width: 1440px; */
     width: 100%;
     height: 450px;
     margin-top: 38px;
     background: #0D263B;
-    @media (max-width:1044px){
+    @media (max-width:1152px){
         height: fit-content;
-        
     }
 
 `
@@ -25,12 +23,11 @@ const Wrapper =styled.div`
     padding: 48px 130px 48px 130px;
     display: flex;
     align-items: stretch;
-    justify-content: space-between;
-    @media (max-width: 1044px){
+    justify-content: space-between; 
+    @media (max-width:1152px){
+        padding: 30px 30px;
         flex-direction: column;
-    }
-    @media (max-width: 1000px){
-        padding:48px 50px;
+        gap: 10px;
     }
     .sub-title{
         color: #ffffff;
@@ -48,6 +45,26 @@ const Wrapper =styled.div`
     .location{
         width: 250px;
     }
+    .leftbottom{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex: 1;
+        @media (max-width: 875px){
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    .rightbottom{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex: 1;
+        @media (max-width: 875px){
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 `
 
 const ContactSection =styled.div`
@@ -60,8 +77,6 @@ const ContactSection =styled.div`
 ContactSection.item =styled.div`
     display: flex;
     gap: 21px;
-    /* justify-content: center; */
-    /* gap: 5px; */
 `
 const DiscoverSection =styled.div`
     display: flex;
@@ -103,7 +118,9 @@ Icon.In =styled(In)`
  cursor: pointer;
 `
 Icon.NavLogo=styled(NavLogo)``
-Icon.BottomIcon =styled(BottomIcon)``
+Icon.BottomIcon =styled(BottomIcon)`
+   
+`
 
 const FooterBottom =styled.div`
     padding: 13px 130px 0 130px;
@@ -111,8 +128,16 @@ const FooterBottom =styled.div`
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+    @media (max-width: 875px){
+        padding: 40px 30px;
+        flex-direction: column;
+        gap: 10px;
+    }
     p{
         color: #ffffff;
+        @media (max-width:588px){
+            width: 234px;
+        }
     }
     div{
         display: flex;
@@ -130,6 +155,12 @@ const FooterBottom =styled.div`
         height: 35px;
         background: #0061DF;
         border-radius: 3px;
+    }
+    .iconbottom{
+        @media (max-width:400px){
+        position: relative;
+        right: 20px;
+        }
     }
 `
 export{
