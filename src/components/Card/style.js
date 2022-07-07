@@ -8,8 +8,7 @@ import {ReactComponent as Like} from '../../assets/icons/like.svg'
 
 
 const Container = styled.div`
-  width: 350px;
-  height: 430px;
+  flex: 0 1 300px;
   background: #FFFFFF;
   border: 1px solid #E6E9EC;
   border-radius: 3px;
@@ -53,6 +52,7 @@ const Featured = styled.div`
   font-weight: 600;
   top:20px;
   left: 3%;
+  
 `
 
 const ForSale = styled.div`
@@ -70,11 +70,78 @@ const ForSale = styled.div`
   user-select: none;
   top:20px;
   left: 68%;
+  @media (max-width: 1180px){
+    left: 67%;
+  }
+  @media (max-width: 1098px){
+    left: 64.5%;
+  }
+  @media (max-width: 1049px){
+    left: 62.5%;
+  }
+  @media (max-width: 1023px){
+    left: 75%;
+  }
+  @media (max-width: 913px){
+    left: 70%;
+  }
+  @media (max-width: 780px){
+    left: 68%;
+  }
+  @media (max-width: 725px){
+    left: 66%;
+  }
+  @media (max-width: 680px){
+    left: 64.5%;
+  }
+  @media (max-width: 664px){
+    left: 62.5%;
+  }
+  @media (max-width: 639px){
+    left: 80%;
+  }
+  @media (max-width: 600px){
+    left: 78%;
+  }
+  @media (max-width: 554px){
+    left: 76%;
+  }
+  @media (max-width: 505px){
+    left: 74.5%;
+  }
+  @media (max-width: 470px){
+    left: 72.8%;
+  }
+  @media (max-width: 449px){
+    left: 71.8%;
+  }
+  @media (max-width: 417px){
+    left: 71%;
+  }
+  @media (max-width: 400px){
+    left: 69.5%;
+  }
+  @media (max-width: 385px){
+    left: 68.5%;
+  }
+  @media (max-width: 375px){
+    left: 67.5%;
+  }
+  @media (max-width: 365px){
+    left: 66.5%;
+  }
+  @media (max-width: 350px){
+    left: 64.5%;
+  }
+  @media (max-width: 335px){
+    left: 63.5%;
+  }
 `
 
 const Img = styled.img`
   width: 100%;
   height: 220px;
+  object-fit: cover;
 `
 const ImgUser =styled.img``
 

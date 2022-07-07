@@ -9,14 +9,16 @@ import { useNavigate } from 'react-router-dom'
 const {REACT_APP_BASE_URL: url} =process.env
 const SignIn = () => {
   const {mutate} = useMutation(()=>{
-    fetch(`${url}public/auth/login`, {method:'POST',
+  return fetch(`${url}public/auth/login`, {method:'POST',
     headers:{'Content-type':'application/json'},
     body:JSON.stringify({email:emailRef.current.value,password:pwRef.current.value})})
     .then(res=> res.json())
   },
   {
     onSuccess:(res)=>{
-      console.log(res.authenticationToken);
+      // console.log(res.authenticationToken);
+      localStorage.setItem('token',res.authenticationToken)
+      if(res.authenticationToken) navigate('/home')
     },
     onError:(err)=>{
       // console.log(err);

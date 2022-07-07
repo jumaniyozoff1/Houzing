@@ -21,3 +21,38 @@ root.render(
     </BrowserRouter>
   </div>
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// recommided button style
+/* &:active {
+			transform: translate(-5px, 0);
+			} */

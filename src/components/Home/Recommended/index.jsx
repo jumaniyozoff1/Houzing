@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import { Container } from './style'
+import { Container, Wrapper } from './style'
 import Card from '../../Card'
 import { Swiper,SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -10,6 +10,8 @@ import "swiper/css/navigation";
 const Recommended = () =>{
   return(
     <Container>
+      <Wrapper>
+
       <Swiper
 					className="products__slider"
 					loop={true} 
@@ -22,22 +24,16 @@ const Recommended = () =>{
 					modules={[Pagination, Navigation]} 
           breakpoints={{
 						0: {
-							slidesPerView: 1,
+              slidesPerView: 1,
 						},
 						640: {
-							slidesPerView: 2,
+              slidesPerView: 2,
 						},
 						1024: {
-							slidesPerView: 2,
-						},
-            1330: {
-							slidesPerView: 3,
-						},
-            1900: {
-							slidesPerView: 4,
+              slidesPerView: 3,
 						},
 					}}
-				>
+          >
           <SwiperSlide>
             <Card/>
           </SwiperSlide>
@@ -57,6 +53,7 @@ const Recommended = () =>{
             <Card/>
           </SwiperSlide>
 				</Swiper>
+      </Wrapper>
     </Container>
   )
 }
