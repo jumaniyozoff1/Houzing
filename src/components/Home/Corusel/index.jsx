@@ -16,6 +16,7 @@ const Corusel = () =>{
             <IconRight onClick={()=> slider.current.next()}>
               <RightArrow />
             </IconRight>
+         <div className='katta'>
             <Position>
                 <h1 className='title'>Skyper Pool Partment</h1>
                 <h2 className='sub-title'>112 Glenwood Ave Hyde Park, Boston, MA</h2>
@@ -40,6 +41,7 @@ const Corusel = () =>{
                 <h1 className='title-small'>$5,250/mo</h1>
                 <Button className='button' mt={10} width={'180px'}>Read more</Button>
             </Position>
+        </div>   
             <Container autoplay ref={slider}>
                 <Img src={HomeOne}/>
                 <Img src={HomeTwo}/>

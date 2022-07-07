@@ -34,6 +34,13 @@ const Form = styled.div`
 	max-width: 1440px;
 	width: 100%;
 	padding: 10px 130px;
+	/* @media (max-width: 934px){
+		flex-wrap: wrap;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+	} */
+
 `;
 const Advanced = styled.div`
 	width: fit-content;

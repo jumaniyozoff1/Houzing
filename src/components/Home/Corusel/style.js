@@ -11,7 +11,21 @@ import {ReactComponent as Beds} from '../../../assets/icons/Beds.svg'
 
 const Wrapper = styled.div`
     position: relative;
-
+    .katta{
+        width: 100%;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       top: 200px;
+       @media (max-width: 934px){
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 250px;
+       }
+    }
 
 `
 
@@ -92,13 +106,13 @@ const IconRight =styled.div`
 
 
 const Position =styled.div`
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 7;
-    left: 32%;
+    /* left: 32%; */
     /* display: none; */
     .title{
         font-family: 'Montserrat';
@@ -136,9 +150,9 @@ const Position =styled.div`
         color: #FFFFFF;
         margin-top: 10px;
     }
-    @media (max-width: 935px){
+    /* @media (max-width: 935px){
         left: 32%;
-    }
+    } */
 `
 
 

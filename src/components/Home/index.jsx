@@ -16,7 +16,9 @@ const Home = () => {
       <Corusel/>
       <Reacommended/>
       <ChooseInfo/>
-      {/* <Category/> */}
+      {/* {
+        localStorage('token') || <Category/>
+      } */}
       <FarmHouse/>
       <Recent/>
       {/* <Testimonials/> */}
