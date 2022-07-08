@@ -33,7 +33,7 @@ const SignUp = () => {
   {
     onSuccess: (res) => {
       console.log(res)
-      localStorage.setItem('register', 'ff1a5255-c49b-4922-93a4-ce7fe02ca1c8')
+      // localStorage.setItem('register', 'ff1a5255-c49b-4922-93a4-ce7fe02ca1c8')
       // const reg ='bd8e6aa6-6758-44e1-8e7f-c46469c2a01e'
       // localStorage.setItem('register',reg)
       // if(register) navigate('/home')

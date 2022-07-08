@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/icons/Logo.svg';
 import { ReactComponent as NavMenu } from '../../assets/icons/navMenu.svg';
 import { ReactComponent as NavUser } from '../../assets/icons/navUser.svg';
+import { ReactComponent as NavUserBig } from '../../assets/icons/navUser.svg';
 
 
 const Container = styled.div``;
@@ -79,6 +80,16 @@ const Login =styled.div`
 	}
 `
 const Icon =styled.div``
+Icon.NavUserBig =styled(NavUserBig)`
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+	@media (max-width:934px){
+		display: none;
+	}
+`
 
 Icon.NavMenu = styled(NavMenu)`
 	display: none;
