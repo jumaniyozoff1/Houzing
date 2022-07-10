@@ -6,12 +6,12 @@ const Container =styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 150px;
 
 `
 const Wrapper =styled.div`
-    margin-top: 150px;
     width: 520px;
-    height: 300px;
+    height: fit-content;
     background: #FFFFFF;
     border: 1px solid #E6E9EC;
     box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);

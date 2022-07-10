@@ -6,9 +6,11 @@ import  NotUser from '../../assets/img/user.png'
 const Card = ({info}) => {
   return (
     <Container>
+      <div className='pos'>
         <Featured>FEATURED</Featured>
         <ForSale>FOR SALE</ForSale>
-        <User><ImgUser src={info?.notuser || NotUser}/></User>
+      </div>
+      <User><ImgUser src={info?.notuser || NotUser}/></User>
       <Img src={info?.attachments[0]?.imgPath || NotImage}/>
       <Wrapper>
         <h2 className='sub-title'>{info?.address || 'New Apartment Nice Wiew'}</h2>

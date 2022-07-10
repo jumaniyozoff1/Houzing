@@ -20,13 +20,22 @@ const Container = styled.div`
     -moz-box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 34px 0px rgba(34, 60, 80, 0.2);
   }
+  .pos{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 10px;
+
+  }
 `
 
 const User = styled.div`
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   width: 42px;
   height: 42px;
   border-radius:50%;
@@ -34,7 +43,6 @@ const User = styled.div`
   box-shadow: 0px 0px 10px rgba(13, 38, 59, 0.2);
   top:  46.5%;
   right:  20px;
-
 `
 
 const Featured = styled.div`
@@ -42,7 +50,6 @@ const Featured = styled.div`
   justify-content: center;
   align-items: center;
   padding: 5px 12px;
-  position: absolute;
   height: 23px;
   width: 100px;
   background: #0061DF;
@@ -50,8 +57,8 @@ const Featured = styled.div`
   user-select: none;
   color: #ffffff;
   font-weight: 600;
-  top:20px;
-  left: 3%;
+  /* top:20px;
+  left: 3%; */
   
 `
 
@@ -62,15 +69,14 @@ const ForSale = styled.div`
   padding: 5px 12px;
   color: #ffffff;
   font-weight: 600;
-  position: absolute;
   height: 23px;
   width: 100px;
   background: #0D263B;
   border-radius: 3px;
   user-select: none;
-  top:20px;
-  left: 68%;
-  @media (max-width: 1180px){
+  /* top:20px;
+  left: 65%; */
+  /* @media (max-width: 1180px){
     left: 67%;
   }
   @media (max-width: 1098px){
@@ -135,7 +141,7 @@ const ForSale = styled.div`
   }
   @media (max-width: 335px){
     left: 63.5%;
-  }
+  } */
 `
 
 const Img = styled.img`

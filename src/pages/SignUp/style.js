@@ -17,7 +17,6 @@ const Wrapper =styled.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
-
     .title{
         width: 100%;
         text-align: start;
