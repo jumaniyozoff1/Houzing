@@ -3,7 +3,7 @@ import { Container, Results, Wrapper } from './style'
 import Filter from '../Filter'
 import Card from '../Card'
 import {useQuery} from 'react-query'
-import {useLocation} from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 
 
 const {REACT_APP_BASE_URL: url} = process.env
@@ -11,6 +11,7 @@ const {REACT_APP_BASE_URL: url} = process.env
 const Properties = () =>{
     const {search} = useLocation()
     const [data,setdata] = useState([])
+    const navigate = useNavigate()
 
     useQuery(['get started', data], ()=>{
         return fetch(`${url}v1/houses/list${search}`).then(res=>res.json())
@@ -20,6 +21,10 @@ const Properties = () =>{
             setdata(res?.data || []);
         }
     })
+    const onSelect = (id) =>{
+        console.log(id,"selected");
+
+    }
     return(
         <Container>
             <Filter/>
@@ -30,7 +35,7 @@ const Properties = () =>{
                 {
                     data.map((value)=>{
                         return(
-                            <Card key={value.id} info={value}/>
+                            <Card onClick={()=>onSelect(value?.id)} key={value?.id} info={value}/>
                         )
                     })
                 }

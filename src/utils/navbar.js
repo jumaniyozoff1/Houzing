@@ -1,6 +1,7 @@
 import Generic from '../pages/Generic'
 import HomePage from '../pages/Home'
 import PropertiesPage from '../pages/Properties'
+import SelectedHousePage from '../pages/SelectedHouse'
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
 
@@ -46,6 +47,15 @@ export const navbar = [
         title: 'Sign up',
         path: '/signup',
         element:<SignUp/>,
+        search: '?',
+        hidden: true,
+        private: true
+    },
+    {
+        id: 6,
+        title: 'Product',
+        path: '/properties/:id',
+        element:<SelectedHousePage/>,
         search: '?',
         hidden: true,
         private: true

@@ -3,9 +3,9 @@ import { Container, Img, ImgUser, Wrapper, Infowrap, Detailes, Icon, Footer, Pri
 import  NotImage from '../../assets/img/notAvailbale.jpg'
 import  NotUser from '../../assets/img/user.png'
 
-const Card = ({info}) => {
+const Card = ({info,onClick}) => {
   return (
-    <Container>
+    <Container onClick={onClick}>
       <div className='pos'>
         <Featured>FEATURED</Featured>
         <ForSale>FOR SALE</ForSale>

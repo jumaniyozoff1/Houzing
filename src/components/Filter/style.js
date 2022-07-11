@@ -6,9 +6,9 @@ import { ReactComponent as search } from '../../assets/icons/Search.svg';
 const Container = styled.div`
 	display: flex;
 	justify-content: center;
-	@media (max-width: 934px){
+	/* @media (max-width: 934px){
 		display: none;
-	}
+	} */
 	
 
 `;
