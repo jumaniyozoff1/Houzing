@@ -4,7 +4,8 @@ const Container =styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 95px;
+    /* margin-top: 95px; */
+    height: 90vh;
 `
 const Wrapper =styled.div`
     padding:24px 30px;

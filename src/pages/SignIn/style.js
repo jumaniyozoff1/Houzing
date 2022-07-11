@@ -6,17 +6,21 @@ const Container =styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 150px;
+    /* margin-top: 150px; */
+    height: 90vh;
 
 `
 const Wrapper =styled.div`
-    width: 520px;
+    padding:24px 30px;
+    max-width: 580px;
+    width: 100%;
     height: fit-content;
     background: #FFFFFF;
     border: 1px solid #E6E9EC;
     box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
     border-radius: 3px;
-    padding: 24px 30px;
+    display: flex;
+    flex-direction: column;
     .login{
         width: 41px;
         height: 20px;
